@@ -1,5 +1,4 @@
-2026 Personal website project assessment
+2026 Personal website project assessment.
 
-<---------------------------------------------->
-Develop a digital technologies outcome
-assessment against Achievement Standard 92005
+Develop a digital technologies outcome,
+assessment against Achievement Standard 92005.
