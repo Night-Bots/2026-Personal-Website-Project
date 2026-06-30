@@ -1,6 +1,126 @@
-h1 {
-    text-align: center;
-    font-size: 100px;
-    color: orange;
-    margin-top: 20%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
+
+section {
+  scroll-snap-align: start;
+  scroll-margin-top: 10vh;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    color: #c9c9c9;
+    margin-top: 10vh;
+}
+
+/* Heading Styles */
+
+.Nav-Bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 30px;
+  background-color:whitesmoke;
+  backdrop-filter: blur(50px);     /* glass effect */
+  z-index: 9999;  
+}
+
+.Logo {
+    font-size: 200px;
+}
+
+.Nav-Link {
+    font-size: large;
+    display: inline-flexbox;
+    list-style: none;
+    padding-right: 50px;
+
+}
+
+
+/* Hero Section */
+.hero {
+    display:block;
+    height: 75vh;
+    width: 100vw;
+    background-image: url(Resource/Img/CPU/CPU_2.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+
+
+/* Utility Classes */
+.colorful-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 50%, rgb(16, 155, 254) 100%, rgb(201, 201, 201) 150%);
+}
+
+
+/* Specific Styles */
+
+
+/* Content Section */
+.content {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.card {
+    width: 30vw;
+    height: 250px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hidden-text {
+    opacity: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+     background: linear-gradient(to right, rgb(249, 239, 239) 0%, transparent 100%);
+     transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    .hidden-text {
+       background: none;
+       color: white;
+    }
+}
+
+/* test */
+ video {
+    height: 100vh;
+    width: 100vw;
+    z-index: -9999;  
+ }
+
+
