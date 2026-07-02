@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     cursor:text;
 }
 
+
 /* Heading Styles */
 
 .Nav-Bar {
@@ -91,7 +92,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 50%, rgb(201, 201, 201) 100%);
+   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 100%);
     background-size: 800% 800%;
    animation: gradientAnimation 30s ease infinite;
 }
@@ -104,7 +105,19 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-   background-image: linear-gradient(90deg, #0071c5 0%, #0068b5 25%, rgb(131, 14, 228) 75%, rgb(255, 255, 255) 100%);
+   background-image: linear-gradient(90deg, #0071c5 0%, whitesmoke 50%, #0068b5 100%);
+    background-size: 800% 800%;
+   animation: gradientAnimation 30s ease infinite;
+}
+
+.Animating-Colorful-Text-Hero-2 {
+    padding-top: 75px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+   background-image: linear-gradient(90deg, whitesmoke 0%, grey 50%, whitesmoke 100%);
     background-size: 800% 800%;
    animation: gradientAnimation 30s ease infinite;
 }
@@ -140,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 .fadding-text {
-    background: linear-gradient(to right, whitesmoke 0%, whitesmoke 10%, transparent 30%, transparent 100%);
+    background: linear-gradient(to right, whitesmoke 0%, whitesmoke 10%, transparent 40%, transparent 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,10 +166,9 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     .fadding-text {
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: whitesmoke;
-
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: whitesmoke;
     }
 }
 
@@ -164,5 +176,5 @@ h1, h2, h3, h4, h5, h6, p, a, span {
  video {
     height: 100vh;
     width: 100vw;
-    z-index: -9999;  
+    z-index: -9999;
  }
