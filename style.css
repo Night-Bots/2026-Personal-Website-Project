@@ -3,18 +3,24 @@
 
 
 /* Global Styles */
-.root {
-    --Copyright-Symbol: "\00A9";
+
+@font-face {
+  font-family: ROG_Regular;
+  src: url(Resource/Font/asusrog_regular.ttf);
 }
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 section {
   scroll-snap-align: start;
   scroll-margin-top: 10vh;
+  width: 100%;
 }
 
 body {
@@ -26,8 +32,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span {
-    cursor:text;
+    cursor:auto;
 }
+
+
 
 
 /* Heading Styles */
@@ -51,6 +59,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 .Logo {
     font-size: 200px;
     color: #0071c5;
+    cursor:none;
 }
 
 .Nav-Link {
@@ -58,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     display: inline-flexbox;
     list-style: none;
     padding-right: 50px;
-
+    cursor: pointer;
 }
 
 
@@ -76,7 +85,6 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 
-
 /* Utility Classes */
 .colorful-text {
     -webkit-background-clip: text;
@@ -92,7 +100,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 100%);
+   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 50%, rgb(192,192,192) 100%);
     background-size: 800% 800%;
    animation: gradientAnimation 30s ease infinite;
 }
@@ -133,12 +141,33 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 
 
 /* Content Section */
+.two-column {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100%; /* full section height */
+  padding-top: 15vh
+}
+
+.Features-Text {
+    transform: rotate(-90deg);
+    padding-bottom: 300px;
+    padding-right:500px;
+    font-size: 80px;
+    font-family:ROG_Regular, Roboto Condensed, sans-serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%, rgb(16, 155, 254) 50%, rgb(16, 155, 254) 100%, rgb(201, 201, 201) 150%);
+   transition: transform 0.3s ease
+}
+
 .content {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     gap: 20px;
     padding: 20px;
-    padding-top: 100px;
 }
 
 .card {
@@ -153,11 +182,19 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 .fadding-text {
-    background: linear-gradient(to right, whitesmoke 0%, whitesmoke 10%, transparent 40%, transparent 100%);
+    background: linear-gradient(to right, whitesmoke 0%, whitesmoke 40%, transparent 75%, transparent 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.4s ease;
+}
+
+.highlight_grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0px 50%;
+    padding-top: 100px;
 }
 
 /* Hover Effects */
@@ -170,11 +207,14 @@ h1, h2, h3, h4, h5, h6, p, a, span {
         background-clip: text;
         -webkit-text-fill-color: whitesmoke;
     }
+    .feature-text {
+        transform: translateY(-20px);
+    }
 }
 
 /* test */
  video {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: -9999;
  }
