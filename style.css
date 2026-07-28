@@ -154,10 +154,63 @@ body {
 }
 
 
-/* Specific Styles */
+/* Content Global Styles */
+.BG-Video-Container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+    margin:auto
+}
 
+.BG-Video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+    z-index: -1; /* Place behind content */
+}
 
-/* Content Section */
+.highlight_grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+    padding: 0, 50%;
+}
+
+.hotspot {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('Resource/Img/Blue-circle-hotspot.png');
+    background-size: cover;
+    z-index: 10;
+}
+
+.info-box {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Features Section */
 .two-column {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -206,26 +259,29 @@ body {
     transition: 0.4s ease;
 }
 
-.highlight_grid {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 20px;
-    padding: 0, 50%;
-}
+/* Performance Section */
+
+
+
 /* Effciency Section */
 
 
 
 /* Technology Section */
-.BG-Video {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+
+
+ /* Footer Section */
+ .footer {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire section */
-    z-index: -1; /* Place behind content */
-}
+    padding: 20px 0;
+ }
 
 /* Hover Effects */
 
@@ -239,22 +295,6 @@ body {
     }
 }
 
-
-/* test */
- video {
-    height: 100%;
-    width: 100%;
-    z-index: -9999;
- }
-
- /* Footer Section */
- .footer {
-    background-color: #1a1a1a;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 20px 0;
- }
+.hotspot:hover .info-box {
+  opacity: 1;
+}
