@@ -153,6 +153,19 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+@keyframes spinPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
 
 /* Content Global Styles */
 .BG-Video-Container {
@@ -175,39 +188,46 @@ body {
 
 .highlight_grid {
     display: inline-grid;
+    position: relative;
+    bottom: -85%;
+    left: 40%;
     grid-template-columns: repeat(3, 2fr);
-    gap: 20px;
-    padding: 0, 50%;
+    gap: 75px;
 }
 
 .hotspot {
     position: absolute;
-    top: 10%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-image: url('Resource/Img/Blue-circle-hotspot.png');
+    top: var(--top);
+    left: var(--left);
+
+    width: 75px;
+    height: 75px;
+
+    background-image: url('Resource/Img/Blue_circle_hotspot_v2.png');
     background-size: cover;
-    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    animation: spinPulse 5s linear infinite;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .info-box {
     position: absolute;
-    top: -10px;
-    left: 50px;
+    top: 5%;
+    left: 37%;
     width: auto;
     height: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -40%) !important;
     background-color: rgba(0, 0, 0, 0.8);
     color: whitesmoke;
     padding: 15px;
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Features Section */
@@ -295,6 +315,7 @@ body {
     }
 }
 
-.hotspot:hover .info-box {
+.hotspot:hover + .info-box {
   opacity: 1;
+  scale: 1.1;
 }
