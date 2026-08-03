@@ -131,20 +131,7 @@ body {
    animation: gradientAnimation 30s ease infinite;
 }
 
-.Animating-Colorful-Text-Hero {
-    font-size: 100px;
-    padding-top: 15px;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-   background-image: linear-gradient(90deg, rgb(16, 155, 254) 0%,#0068b5 85%, whitesmoke 100%);
-    background-size: 800% 800%;
-   animation: gradientAnimation 30s ease infinite;
-}
-
-.Animating-Colorful-Text-Hero-2 {
+.animated-colorful-text-metal {
     padding-top: 75px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -195,7 +182,7 @@ body {
     z-index: -1; /* Place behind content */
 }
 
-.highlight_grid{
+.Highlight_Info{
     display: inline-grid;
     position: relative;
     bottom: -75%;
@@ -261,6 +248,10 @@ body {
     padding-right:500px;
     font-size: 80px;
     font-family:ROG_Regular, Roboto Condensed, sans-serif;
+
+    z-index: 9998;
+    overflow: visible;
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -301,6 +292,23 @@ body {
 
 
 /* Effciency Section */
+
+
+
+/* Feature Info Section */
+
+.Feature-Info {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-box {
+    border: 1px solid #0071c5;
+    border-radius: 8px;
+}
 
 
 
