@@ -190,7 +190,7 @@ body {
 
 .Highlight_Info{
     display: inline-grid;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
@@ -314,7 +314,8 @@ body {
     align-items: center;
     width: 100%;
     height: 30%;
-    padding-top: 15vh;
+    padding-top: 15%;
+    padding-bottom: 30%;
 
 }
 
@@ -325,7 +326,8 @@ body {
     border-radius: 8px;
     color: whitesmoke;
     width: 70%;
-    height: 300px;
+    height: 500px;
+    padding-left: 10px;
 
 
     opacity: 0;
@@ -334,6 +336,17 @@ body {
     animation-delay: var(--delay);
 }
 
+.card-highlight-info {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
 
  /* Footer Section */
  .footer {
@@ -341,7 +354,7 @@ body {
     color: whitesmoke;
     text-align: center;
     padding: 20px;
-    position: relative;
+
     bottom: 0;
     width: 100%;
     padding: 20px 0;
