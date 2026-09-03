@@ -97,7 +97,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-
+    box-shadow: 0 50px 30px #8D8E8D;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -355,6 +356,13 @@ body {
     padding: 20px;
     width: 100%;
     height: auto;
+}
+
+.review-iframe {
+    height: 150px;
+    width: 300px;
+    border-radius: 8px;
+
 }
 
 .Video-Grid video {
