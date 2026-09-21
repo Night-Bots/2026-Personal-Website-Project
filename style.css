@@ -34,6 +34,13 @@ body {
 
 /* Heading Styles */
 
+.Logo {
+    font-size: 200px;
+    color: #0071c5;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 .Nav-Bar {
   position: fixed;
   top: 0;
@@ -49,16 +56,6 @@ body {
   backdrop-filter: blur(50px);     /* glass effect */
   z-index: 9999;  
 }
-
-.Logo {
-    font-size: 200px;
-    color: #0071c5;
-    text-decoration: none;
-    font-family: "Roboto Condensed", sans-serif;
-}
-
-
-
 
 .Nav-Box {
     font-size: large;
@@ -101,8 +98,8 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Global Utility Classes */
 
-/* Utility Classes */
 .colorful-text {
     -webkit-background-clip: text;
     background-clip: text;
@@ -209,46 +206,11 @@ body {
     
 }
 
-.hotspot {
-    position: absolute;
-    top: var(--top);
-    left: var(--left);
-
-    width: 75px;
-    height: 75px;
-
-    background-image: url('Resource/Img/Blue_circle_hotspot_v2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    cursor: pointer;
-    animation: spinPulse 5s linear infinite;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.info-box {
-    position: absolute;
-    top: 5%;
-    left: 37%;
-    width: auto;
-    height: auto;
-    transform: translate(-100%, -40%) !important;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
 /* Features Section */
 .two-column {
   display: grid;
   grid-template-columns: 20% 80%;
-  height: 100%; /* full section height */
+  height: 100%;
   padding-top: 15vh
 }
 
@@ -289,6 +251,16 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    .fadding-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: whitesmoke;
+    }
+}
+
 .fadding-text {
     background: linear-gradient(to right, whitesmoke 0%, whitesmoke 25%, transparent 50%, transparent 100%);
     -webkit-background-clip: text;
@@ -299,7 +271,45 @@ body {
 
 /* Performance Section */
 
+.hotspot {
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
 
+    width: 75px;
+    height: 75px;
+
+    background-image: url('Resource/Img/Blue_circle_hotspot_v2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    animation: spinPulse 5s linear infinite;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.info-box {
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    width: auto;
+    height: auto;
+    transform: translate(-100%, -40%) !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.hotspot:hover + .info-box {
+  opacity: 1;
+  scale: 1.1;
+}
 
 /* Effciency Section */
 
@@ -356,13 +366,22 @@ body {
     padding: 20px;
     width: 100%;
     height: auto;
+    /* children */
+    div {
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 15px;
+    }
 }
 
 .review-iframe {
     height: 150px;
     width: 300px;
     border-radius: 8px;
-
 }
 
 .Video-Grid video {
@@ -385,19 +404,4 @@ body {
     padding: 20px 0;
  }
 
-/* Hover Effects */
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    .fadding-text {
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: whitesmoke;
-    }
-}
-
-.hotspot:hover + .info-box {
-  opacity: 1;
-  scale: 1.1;
-}
+/* END */
