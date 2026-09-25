@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!--heading-->
     <meta name="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,204 +8,187 @@
     <link rel="icon" type="image/x-icon" href="Resource/Img/Cat.jpg">
     <title>Personal Website Project 2026</title>
 </head>
-<body>
-    <nav class="Nav-Bar">
-        <div class="logo">
+<body> <!--body-->
+    <nav class="Nav-Bar"> <!--navigation bar-->
+        <div class="logo"> <!--Main topic name in navigation bar-->
             <h1 class="colorful-text">Intel<span style="font-size: small;">®</span> Core™ 13th Generation Processor</h1>
         </div>
-        <div class="Nav-Box">
+        <div class="Nav-Box"> <!--Navigation links for moving around the page-->
              <a href="#home" class="Nav-Href">Home</a>
              <a href="#Features" class="Nav-Href">Features</a>
              <a href="#footer" class="Nav-Href">Footer</a>
         </div>
     </nav>
-    <section id="home" class="hero">
+    <section id="home" class="hero"> <!--Home section and title-->
         <h1 class="animated-colorful-text" style="font-size: 100px; padding-top: 15px;">Intel<span style="font-size: 25px;">®</span> Core<span style="font-size: 75px;">™</span> 13th Gen</h1>
         <h2 class="ROG_colorful-text" style="font-family: Rog_Regular, 'Roboto Condensed';">Raptor Lake</h2>
         <h3 class="animated-colorful-text-metal" style="padding-top: 75px;">One of the most powerful processors*</h3>
     </section>
-    <section id="Features" class="two-column">
+    <section id="Features" class="two-column"> <!--Features section with button that take you to specific sections -->
         <div>
             <h1 class="Features-Text">Features</h1>
         </div>
-        <div class="content">
-            <div>
-            <button onclick="location.href='#Performance'" class="card">
-                <h2 class="colorful-text">Performance</h2>
-                <p style="color: whitesmoke">The Intel® Core™ 13th Generation offers exceptional performance for gaming, content creation, and multitasking...</p>
+        <div class="content"> <!--div Content for the button card-->
+            <div onclick="location.href='#Performance'" class="card"> <!--Button to perforance section-->
+                <h1 class="colorful-text">Performance</h1>
+                <p>The Intel® Core™ 13th Generation offers exceptional performance for gaming, content creation, and multitasking...</p>
                 <p class="fadding-text">With its high clock speeds and multiple cores, it can handle demanding applications with ease.</p>
-            </button>
             </div>
-            <div>
-                <button onclick="location.href='#Efficiency'" class="card">
-                    <h2 class="colorful-text">Efficiency</h2>
-                    <p style="color: whitesmoke">The Intel® Core™ 13th Generation is designed for energy efficiency, providing excellent performance without excessive power consumption.</p>
-                    <p class="fadding-text">With its advanced architecture, it delivers high performance while keeping power usage in check.</p>
-                </button>
+            <div onclick="location.href='#Efficiency'" class="card"> <!--Button to efficiency section-->
+                <h1 class="colorful-text">Efficiency</h1>
+                <p>The Intel® Core™ 13th Generation is designed for energy efficiency, providing excellent performance without excessive power consumption.</p>
+                <p class="fadding-text">With its advanced architecture, it delivers high performance while keeping power usage in check.</p>
             </div>
-            <div>
-                <button onclick="location.href='#Technology'" class="card">
-                    <h2 class="colorful-text">Technology</h2>
-                    <p style="color: whitesmoke">Advanced features and innovations that set the Intel® Core™ 13th Generation apart.</p>
-                    <p class="fadding-text">Experience the future of computing with the latest advancements in processor technology.</p>
-                </button>
+            <div button onclick="location.href='#Technology'" class="card"> <!--Button to technology section-->
+                <h1 class="colorful-text">Technology</h1>
+                <p>Advanced features and innovations that set the Intel® Core™ 13th Generation apart.</p>
+                <p class="fadding-text">Experience the future of computing with the latest advancements in processor technology.</p>
             </div>
-            <div>
-                <button onclick="location.href='#Reviews'" class="card">
-                    <h1 class="colorful-text">Reviews</h1>
-                    <p style="color: whitesmoke">Reviews of the Intel® Core™ 13th Generation</p>
-                    <p class="fadding-text">See what experts and users are saying about the Intel® Core™ 13th Generation.</p>
-                </button>
+            <div onclick="location.href='#Reviews'" class="card"> <!--Button to reviews section-->
+                <h1 class="colorful-text">Reviews</h1>
+                <p>Reviews of the Intel® Core™ 13th Generation</p>
+                <p class="fadding-text">See what experts and users are saying about the Intel® Core™ 13th Generation.</p>
             </div>
         </div>
     </section>
-    <section id="Performance">
-        <div style="text-align: center;">
-            <h1 style="font-size: 50px; padding-top: 5vh;">\ PERFORMANCE \</h1>
-            <h2 style="font-size: 75px;">[ UNMATCH PERFORMANCE ]</h2>
-        </div>
-        <div style="text-align: center; padding: 0px 20vw;">
+    <section id="Performance"> <!--Performance section-->
+        <div class="Section-Title"> <!--div for the title and subtitle of the performance section-->
+            <h1>\ PERFORMANCE \</h1>
+            <h2>[ UNMATCH PERFORMANCE ]</h2>
             <p>With 16 cores and 24 totals threads, the Intel® Core™ 13th Generation can handle Heavy applications with ease. It is perfect for gaming, content creation, and multitasking, providing a smooth and responsive experience.</p>
         </div>
-        <div class="BG-Video-Container">
-            <video class="BG-Video" autoplay muted preload="auto"><source src="Resource/Video/CPU_VID_1.mp4" type="video/mp4"></video>
-            <div>
+        <div class="BG-Video-Container"> <!--div for the background video container-->
+            <video class="BG-Video-Properties" autoplay muted preload="auto"><source src="Resource/Video/CPU_VID_1.mp4" type="video/mp4"></video>
+            <div> <!--div for hotspot for cpu-->
                 <div class="hotspot" style="--top: 10%; --left: 37%;"></div>
                 <div class="info-box" style="--top: 10%; --left: 37%;"><br>LGA1700 Socket<br></div>
             </div>
-            <div>
+            <div> <!--div for hotspot for cpu-->
                 <div class="hotspot" style="--top: 50%; --left: 30%;"></div>
                 <div class="info-box" style="--top: 50%; --left: 30%;"><br>16 Cores / 24 Threads<br></div>
             </div>
-            <div class="Highlight_Info">
+            <div class="Highlight_Info"> <!--div for the highlight information-->
                 <div>
-                    <h3 class="ROG_colorful-text">Cores</h3>
+                    <h1 class="ROG_colorful-text">Cores</h1>
                     <p class="colorful-text">14-24*</p>
                 </div>
                 <div>
-                    <h3 class="ROG_colorful-text">Threads</h3>
+                    <h1 class="ROG_colorful-text">Threads</h1>
                     <p class="colorful-text">20-32*</p>
                 </div>
                 <div>
-                    <h3 class="ROG_colorful-text">Max Turbo Speed</h3>
+                    <h1 class="ROG_colorful-text">Max Turbo Speed</h1>
                     <p class="colorful-text">5.1-5.8 GHz</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="Efficiency">
-        <div style="text-align: center;">
-            <h2 style="font-size: 50px; padding-top: 5vh; height: 100%;">\ EFFICIENCY \</h2>
-            <h3 style="font-size: 75px; font-family:ROG_Regular, Roboto Condensed, sans-serif;">[ Made With EFFICIENCY In Mind]</h3>
-        </div>
-        <div style="text-align: center; padding: 0px 20vw;">
+    <section id="Efficiency"> <!--Efficiency section-->
+        <div class="Section-Title"> <!--div for the title and subtitle of the efficiency section-->
+            <h1>\ EFFICIENCY \</h1>
+            <h2>[ Made With EFFICIENCY In Mind]</h2>
             <p>With its innovative design, the Intel® Core™ 13th Generation delivers exceptional efficiency without compromising performance.</p>
             <p>The Intel 13th gen design focuses on optimizing power consumption while maintaining high performance levels and offering 8-16 efficiency cores depending on the specific model.</p>
         </div>
-        <div class="BG-Video-Container">
-            <video class="BG-Video" autoplay muted preload="auto">
-                <source src="Resource/Video/CPU_VID_MB.mp4" type="video/mp4">
-                Your browser sucks and does not support the HTML5 video tag.
-            </video>
-            <div class="Highlight_Info">
+        <div class="BG-Video-Container"> <!--div for the background video container-->
+            <video class="BG-Video-Properties" autoplay muted preload="auto"><source src="Resource/Video/CPU_VID_MB.mp4" type="video/mp4"></video>
+            <div class="Highlight_Info"> <!--div for the highlight information-->
                 <div>
-                    <h3 class="ROG_colorful-text">Efficiency Cores</h3>
+                    <h1 class="ROG_colorful-text">Efficiency Cores</h1>
                     <p class="colorful-text">8-16*</p>
                 </div>
                 <div>
-                    <h3 class="ROG_colorful-text">Performance Cores</h3>
+                    <h1 class="ROG_colorful-text">Performance Cores</h1>
                     <p class="colorful-text">6-8*</p>
                 </div>
                 <div>
-                    <h3 class="ROG_colorful-text">E-Core base frequency</h3>
+                    <h1 class="ROG_colorful-text">E-Core base frequency</h1>
                     <p class="colorful-text">2.6-2.2 GHz</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="Technology">
-        <div class="BG-Video-Container" style="width: 100%; height: auto">
-            <video class="BG-Video" autoplay="autoplay" muted="muted" preload="auto" loop="loop" poster="Resource/Img/LED_LIGHT_s3_video.jpg" playsinline><source src="Resource/Video/LED_LIGHT_s3_video.mp4" type="video/mp4"></video>
-            <div style="text-align: center;">
-                <h1 class="Animating-Colorful-Text-Hero-2" style="font-size: 50px; padding-top: 5%;">\ Technology \</h1>
-                <h2 style="font-size: 75px; font-family:ROG_Regular, Roboto Condensed, sans-serif;">[ Advanced Technology ]</h2>
+    <section id="Technology"> <!--Technology section-->
+        <div class="BG-Video-Container-Technology"> <!--div for the background video container-->
+            <video class="BG-Video-Properties" autoplay="autoplay" muted="muted" preload="auto" loop="loop" poster="Resource/Img/LED_LIGHT_s3_video.jpg" playsinline><source src="Resource/Video/LED_LIGHT_s3_video.mp4" type="video/mp4"></video>
+            <div class="Section-Title"> <!--div for the title and subtitle of the technology section-->
+                <h1>\ Technology \</h1>
+                <h2>[ Advanced Technology ]</h2>
+                <p><span class="colorful-text">Intel® Core™ 13th Generation</span> come with cutting-edge technology designed to deliver unparalleled performance and efficiency.
+                    With its advanced architecture, the <span class="colorful-text">Intel® Core™ 13th Generation</span> offers a range of features and innovations that enhance the computing experience.
+                    From improved power efficiency to enhanced AI capabilities, this processor is designed to meet the demands of modern applications and workloads.
+                </p>
             </div>
-            <div style="text-align: center; padding-bottom: 5%;">
-                <p><span class="colorful-text">Intel® Core™ 13th Generation</span> come with cutting-edge technology designed to deliver unparalleled performance and efficiency.</p>
-            </div>
-            <div class="Card-Rotate" style="padding-top: 20%;">
-                <div class="card-box" style="--delay: 0s;">
+            <div class="Card-Rotate"> <!--div for the card rotate container-->
+                <div class="card-box" style="--delay: 0s;"> <!--div for the card box-->
                     <div>
-                          <h3 class="ROG_colorful-text">Memory</h3>
+                          <h1 class="ROG_colorful-text">Memory</h1>
                           <p><span class="colorful-text">Intel® Core™ 13th Generation Processer</span> can support up to massive <span class="colorful-text">192 GB</span></p>
-                    </div>
-                    <img src="Resource/Img/performance_slide_memory_clear2.png" alt="RAM" style="width: 100%; height: 80%; position: relative;">
-                    <div class="card-highlight-info" style="position: absolute; top: 77%; left: 3%; gap: 5px;">
-                        <div>
-                            <h3 class="ROG_colorful-text">DDR4</h3>
+                    </div> 
+                    <img class="RAM-Image" src="Resource/Img/performance_slide_memory_clear2.png" alt="RAM">
+                    <div class="card-highlight-info" style="--top: 77%; --left: 3%; --gap: 5px;"> <!--div for the highlight information-->
+                        <div> 
+                            <h1 class="ROG_colorful-text">DDR4</h1>
                             <p class="colorful-text">Up to 3200 MHz</p>
                         </div>
                         <div>
-                            <h3 class="ROG_colorful-text">DDR5</h3>
+                            <h1 class="ROG_colorful-text">DDR5</h1>
                             <p class="colorful-text"> Up to 4800-5600 MHz*</p>
                         </div>
                          <div>
-                            <h3 class="ROG_colorful-text">Max # of Memory Channels</h3>
+                            <h1 class="ROG_colorful-text">Max # of Memory Channels</h1>
                             <p class="colorful-text"> Up to 2 Channels</p>
                         </div>
                          <div>
-                            <h3 class="ROG_colorful-text">Max Memory Bandwidth</h3>
+                            <h1 class="ROG_colorful-text">Max Memory Bandwidth</h1>
                             <p class="colorful-text"> Up to 76.8-89.6 GB/s*</p>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="card-box" style="--delay: 5s;">
-                    <div style="display: grid; grid-template-columns: 50% 50%;">
+                <div class="card-box" style="--delay: 5s;"> <!--div for the card box-->
+                    <div class="Card-2-layout"> <!--div for the card box layout-->
                         <div>
-                            <img src="Resource/Img/CPU/CPU_1_OG_Clear.png" alt="CPU" style="width: 100%; height: auto; padding-top: 50px;">
+                            <img src="Resource/Img/CPU/CPU_1_OG_Clear.png" alt="CPU">
                         </div>
-                        <div style="padding-right: 10px; p {font-size: 30px;}">
-                            <h3 class="ROG_colorful-text">Advance CPU Technology & Architecture</h3>
+                        <div> <!--div for the card description-->
+                            <h1 class="ROG_colorful-text">Advance CPU Technology & Architecture</h1>
                             <p><span class="colorful-text">Intel® Core™ 13th Generation</span> came with <span class="colorful-text">Hybrid design</span> of <span class="colorful-text">6-8* Performance Cores</span> and <span class="colorful-text">8-16* Efficient Cores</span> which mean it can handle Gaming and background tasks very efficiently. It also came with advanced features like <span class="colorful-text">Intel® Hyper-Threading Technology</span>, <span class="colorful-text">Intel® Turbo Boost Technology</span> and <span class="colorful-text">Intel® Thread Director</span>.</p>
                             <p><span class="colorful-text">Intel® Hyper-Threading Technology</span> allow the processor <span class="colorful-text">P-Core</span> to handle <span class="colorful-text">two threads simultaneously</span>, Which effectively <span class="colorful-text">doubles</span> the task the CPU can handle simulaneousely.</p>
                             <p><span class="colorful-text">Intel® Turbo Boost Technology</span> allows the processor to automatically increase its clock speed above it base speed whever thermal and power conditions allow, providing the best performance during demanding tasks.</p>
                             <p><span class="colorful-text">Intel® Thread Director</span> is a hardware-based technology that helps <span class="colorful-text">optimize</span> the performance of multi-threaded applications by <span class="colorful-text">intelligently</span> deciding whether which task should use a <span class="colorful-text">Performance Core</span> or an <span class="colorful-text">Efficient Core</span> for best efficiency.</p>
                         </div>
                     </div>
-                    <div class="card-highlight-info" style="position: absolute; top: 77%; left: 20%;">
+                    <div class="card-highlight-info" style="--top: 77%; --left: 20%;"> <!--div for the highlight information-->
                         <div>
-                            <h3 class="ROG_colorful-text">Intel® Speed Shift Technology</h3>
+                            <h1 class="ROG_colorful-text">Intel® Speed Shift Technology</h1>
                             <p class="colorful-text">Yes</p>
                         </div>
                         <div>
-                            <h3 class="ROG_colorful-text">Intel® Thermal Velocity Boost</h3>
+                            <h1 class="ROG_colorful-text">Intel® Thermal Velocity Boost</h1>
                             <p class="colorful-text">Yes</p>
                         </div>
                         <div>
-                            <h3 class="ROG_colorful-text">Intel® Smart Cache</h3>
+                            <h1 class="ROG_colorful-text">Intel® Smart Cache</h1>
                             <p class="colorful-text">20-36MB*</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-box" style="--delay: 10s;">
-                    <div style="position: relative; height: 50%; width: 100%; display: flex; justify-content: center; align-items: center;">
-                        <img src="Resource/Img/display_slide_rog.jpg" alt="NPU" style="height: 100%; width: 90%; padding-top: 20px; border-radius: 15px;">
-                    </div>
-                    <h3 class="ROG_colorful-text">AI acceleration</h3>
+                <div class="card-box" style="--delay: 10s;"> <!--div for the card box and it content-->
+                    <img class="NPU-Image" src="Resource/Img/display_slide_rog.jpg" alt="NPU">
+                    <h1 class="ROG_colorful-text">AI acceleration</h1>
                     <p><span class="colorful-text">Core 13th Gen processors</span> feature integrated AI acceleration capabilities, enabling enhanced <span class="colorful-text">performance</span> for <span class="colorful-text">artificial intelligence</span> workloads and efficiency. </p>
                     <p><span class="colorful-text">Featuring Intel® Deep Learning Boost</span> (DL Boost), <span class="colorful-text">Intel® Gaussian & Neural Accelerator</span> (GNA 3.0), <span class="colorful-text">Intel® Quick Sync Video</span> (AI‑assisted video) and also <span class="colorful-text">AVX2 / AVX‑512‑style Vector Optimizations</span></p>
-                     <div class="card-highlight-info" style="position: absolute; top: 80%; left: 20%;">
+                    <div class="card-highlight-info" style="--top: 80%; --left: 20%;"> <!--div for the highlight information-->
                         <div>
-                            <h3 class="ROG_colorful-text">Featuring Intel® Deep Learning Boost</h3>
+                            <h1 class="ROG_colorful-text">Featuring Intel® Deep Learning Boost</h1>
                             <p class="colorful-text">Yes</p>
                         </div>
                         <div>
-                            <h3 class="ROG_colorful-text">Intel® Gaussian & Neural Accelerator</h3>
+                            <h1 class="ROG_colorful-text">Intel® Gaussian & Neural Accelerator</h1>
                             <p class="colorful-text">Yes</p>
                         </div>
                         <div>
-                            <h3 class="ROG_colorful-text">Intel® Quick Sync Video</h3>
+                            <h1 class="ROG_colorful-text">Intel® Quick Sync Video</h1>
                             <p class="colorful-text">Yes</p>
                         </div>
                     </div>
@@ -213,44 +196,46 @@
             </div>
         </div>
    </section>
-   <section id="Reviews">
-      <h1 class="Animating-Colorful-Text-Hero-2" style="font-size: 50px; padding-top: 5vh; height: 100%; text-align: center;"> Reviews </h1>
-      <div class="Video-Grid">
-        <div>
+   <section id="Reviews"> <!--Reviews section-->
+    <div class="Section-Title"> <!--div for the title and subtitle of the reviews section-->
+        <h1> \ Reviews \ </h1>
+        <h2>[ What the experts are saying ]</h2>
+    </div>
+      <div class="Video-Grid"> <!--div for the video grid container-->
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/THhrq58cxgI" allowfullscreen></iframe>
             <h1>[ Introducing 13th Gen Intel Core Processors for Desktop ]</h1>
             <h2>[ Intel ]</h2>
         </div> 
-        <div>
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/p0NfuMziJWk" allowfullscreen></iframe>
             <h1>[ Intel Core i7-13700K Review - Hits the Sweet Spot ]</h1>
             <h2>[ KitGuruTech ]</h2>
         </div> 
-        <div>
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/Dz_8l-xaqAY" allowfullscreen></iframe>
             <h3>[ Intel Core i7 13700K Review - GREAT Performance! GREAT Price! ]</h3>
             <h4>[ eTeknix ]</h4>
         </div> 
-        <div>
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/M6SYADAyz4w" allowfullscreen></iframe>
             <h1>[ Introducing new 13th Gen Intel Core processors for laptops ]</h1>
             <h2>[ Intel ]</h2>
         </div> 
-        <div>
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/3zcCX7yyiz4" allowfullscreen></iframe>
             <h1>[ We were afraid to publish this video Intel 13th Gen Review ]</h1>
             <h2>[ Linus Tech Tips ]</h2>
         </div> 
-        <div>
+        <div> <!--div for review video-->
             <iframe class="review-iframe" src="https://www.youtube.com/embed/aiQaSTQviho?t=1s" allowfullscreen></iframe>
             <h1>[ DON'T BUY the i9 12900K! 👉 Intel i7 13700k Review ]</h1>
             <h2>[ Tech Notice ]</h2>
-        </div> 
-
+        </div>
       </div>
    </section>
-   <footer class="footer" id="footer">
-    <p>Footer | ®AB - 2026 Personal Website - Intel 13th Gen Processors Specifications | Intel, Intel Core, and the Intel logo are trademarks of Intel Corporation. This website is a educational project and is not affiliated with Intel.</p>
+   <footer class="footer" id="footer"> <!--footer section-->
+    <p>Footer | ®AB - 2026 Personal Website - Intel 13th Gen Processors Specifications | Intel, Intel Core, and the Intel logo are trademarks of Intel Corporation. This website is a educational project and is not affiliated with Intel ¯\_(ツ)_/¯.</p>
    </footer>
 </body>
 </html>
