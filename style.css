@@ -96,6 +96,17 @@ body {
     text-align: center;
     box-shadow: 0 50px 30px #8D8E8D;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h1 {
+        font-size: 100px;
+        padding-top: 15px;
+    }
+    h2 {
+        font-family:ROG_Regular, Roboto Condensed, sans-serif;
+    }
+    h3 {
+        padding-top: 75px;
+    }
 }
 
 
